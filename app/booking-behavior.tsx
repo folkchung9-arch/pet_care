@@ -17,8 +17,15 @@ export function BookingBehavior() {
     today.setMinutes(today.getMinutes() - today.getTimezoneOffset());
     const todayValue = today.toISOString().slice(0, 10);
 
+    const tomorrow = new Date(today);
+    tomorrow.setDate(tomorrow.getDate() + 1);
+    const tomorrowValue = tomorrow.toISOString().slice(0, 10);
+
+    const timeInput = form?.querySelector<HTMLSelectElement>('select[name="time"]');
+
     dateInput.min = todayValue;
-    dateInput.value = todayValue;
+    dateInput.value = tomorrowValue;
+    if (timeInput) timeInput.value = "09:30";
 
     const updateEstimate = () => {
       estimatePrice.textContent = "\u00a5" + packageSelect.value + " \u8d77";
@@ -31,8 +38,9 @@ export function BookingBehavior() {
       const time = String(data.get("time") || "");
       formMessage.textContent = name + "\uff0c\u9884\u7ea6\u4fe1\u606f\u5df2\u6536\u5230\uff0c\u6211\u4eec\u4f1a\u5c3d\u5feb\u548c\u4f60\u786e\u8ba4 " + time + " \u7684\u5230\u5e97\u65f6\u95f4\u3002";
       form.reset();
-      dateInput.value = todayValue;
+      dateInput.value = tomorrowValue;
       visitorsInput.value = "1";
+      if (timeInput) timeInput.value = "09:30";
       packageSelect.value = "168";
       updateEstimate();
     };

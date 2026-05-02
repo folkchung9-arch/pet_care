@@ -217,6 +217,7 @@ export const pageHtml = `<header class="topbar">
             </label>
             <label>到店时间
               <select name="time">
+                <option selected>09:30</option>
                 <option>10:30</option>
                 <option>13:00</option>
                 <option>15:30</option>
