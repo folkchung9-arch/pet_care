@@ -270,14 +270,15 @@ export const pageHtml = `<header class="topbar">
           <h2>用户有效评论</h2>
           <p>来自近期到店主人的真实反馈，关注护理过程、环境和服务沟通。</p>
         </div>
-        <div class="review-grid">
+        <div class="review-carousel" aria-label="客户评价轮播">
+          <div class="review-track">
           <article class="review-card">
             <div class="review-top">
               <strong>林女士 · 柯基主人</strong>
               <span>深层洗护</span>
             </div>
             <div class="review-stars" aria-label="五星好评">★★★★★</div>
-            <p>第一次来之前有点担心狗狗怕吹风，洗护师会先说明步骤，中途也提醒了耳朵和指甲情况。回家后毛很蓬松，味道也不刺鼻。</p>
+            <p>第一次来之前有点担心狗狗怕吹风，洗护师会先说明步骤，中途也提醒了耳朵和指甲情况。回家后毛很蓬松，香味很轻，不会刺鼻。</p>
             <div class="review-meta">2026.04.18 · 复购预约</div>
           </article>
           <article class="review-card">
@@ -298,6 +299,124 @@ export const pageHtml = `<header class="topbar">
             <p>造型修得很自然，没有剪得太短。预约时间控制得不错，到店不用久等，护理区也比较干净透明。</p>
             <div class="review-meta">2026.03.27 · 造型满意</div>
           </article>
+          <article class="review-card">
+            <div class="review-top">
+              <strong>许女士 · 银渐层主人</strong>
+              <span>猫咪去浮毛</span>
+            </div>
+            <div class="review-stars" aria-label="五星好评">★★★★★</div>
+            <p>家里换毛期很严重，护理完明显清爽很多。洗护师会边做边发照片，接回家时还给了梳毛频率和饮食提醒，很细致。</p>
+            <div class="review-meta">2026.04.22 · 过程可视</div>
+          </article>
+          <article class="review-card">
+            <div class="review-top">
+              <strong>顾先生 · 金毛主人</strong>
+              <span>大型犬洗护</span>
+            </div>
+            <div class="review-stars" aria-label="五星好评">★★★★★</div>
+            <p>大狗洗澡最怕赶时间，这次每个步骤都很稳。脚底毛、耳道和尾巴都处理得干净，结账前费用也说得很清楚。</p>
+            <div class="review-meta">2026.04.15 · 透明收费</div>
+          </article>
+          <article class="review-card">
+            <div class="review-top">
+              <strong>沈女士 · 博美主人</strong>
+              <span>精修造型</span>
+            </div>
+            <div class="review-stars" aria-label="五星好评">★★★★★</div>
+            <p>会先确认想要的圆头比例，还会根据毛量建议保留长度。成品很精神，拍照特别上镜，狗狗全程状态也比较放松。</p>
+            <div class="review-meta">2026.04.06 · 造型沟通</div>
+          </article>
+          <article class="review-card">
+            <div class="review-top">
+              <strong>马女士 · 法斗主人</strong>
+              <span>皮肤敏感护理</span>
+            </div>
+            <div class="review-stars" aria-label="五星好评">★★★★★</div>
+            <p>我家狗皮肤容易红，店里没有乱推荐项目，先检查皮肤状态再选低刺激洗护。洗完没有挠得厉害，这点很安心。</p>
+            <div class="review-meta">2026.03.31 · 敏感友好</div>
+          </article>
+          <article class="review-card">
+            <div class="review-top">
+              <strong>刘先生 · 边牧主人</strong>
+              <span>日常护理</span>
+            </div>
+            <div class="review-stars" aria-label="五星好评">★★★★★</div>
+            <p>预约、到店、接宠都很顺。护理报告里写了牙龈、耳朵和指甲情况，比单纯洗个澡更有价值，适合长期固定来。</p>
+            <div class="review-meta">2026.03.24 · 护理档案</div>
+          </article>
+          <article class="review-card" aria-hidden="true">
+            <div class="review-top">
+              <strong>林女士 · 柯基主人</strong>
+              <span>深层洗护</span>
+            </div>
+            <div class="review-stars" aria-label="五星好评">★★★★★</div>
+            <p>第一次来之前有点担心狗狗怕吹风，洗护师会先说明步骤，中途也提醒了耳朵和指甲情况。回家后毛很蓬松，香味很轻，不会刺鼻。</p>
+            <div class="review-meta">2026.04.18 · 复购预约</div>
+          </article>
+          <article class="review-card" aria-hidden="true">
+            <div class="review-top">
+              <strong>周先生 · 布偶猫主人</strong>
+              <span>敏感宠物护理</span>
+            </div>
+            <div class="review-stars" aria-label="五星好评">★★★★★</div>
+            <p>猫咪胆子比较小，店里没有强行推进，先让它适应环境。护理结束后会告诉我哪里有毛结，整体沟通很清楚。</p>
+            <div class="review-meta">2026.04.09 · 低压安抚</div>
+          </article>
+          <article class="review-card" aria-hidden="true">
+            <div class="review-top">
+              <strong>陈女士 · 贵宾犬主人</strong>
+              <span>洗剪造型</span>
+            </div>
+            <div class="review-stars" aria-label="五星好评">★★★★★</div>
+            <p>造型修得很自然，没有剪得太短。预约时间控制得不错，到店不用久等，护理区也比较干净透明。</p>
+            <div class="review-meta">2026.03.27 · 造型满意</div>
+          </article>
+          <article class="review-card" aria-hidden="true">
+            <div class="review-top">
+              <strong>许女士 · 银渐层主人</strong>
+              <span>猫咪去浮毛</span>
+            </div>
+            <div class="review-stars" aria-label="五星好评">★★★★★</div>
+            <p>家里换毛期很严重，护理完明显清爽很多。洗护师会边做边发照片，接回家时还给了梳毛频率和饮食提醒，很细致。</p>
+            <div class="review-meta">2026.04.22 · 过程可视</div>
+          </article>
+          <article class="review-card" aria-hidden="true">
+            <div class="review-top">
+              <strong>顾先生 · 金毛主人</strong>
+              <span>大型犬洗护</span>
+            </div>
+            <div class="review-stars" aria-label="五星好评">★★★★★</div>
+            <p>大狗洗澡最怕赶时间，这次每个步骤都很稳。脚底毛、耳道和尾巴都处理得干净，结账前费用也说得很清楚。</p>
+            <div class="review-meta">2026.04.15 · 透明收费</div>
+          </article>
+          <article class="review-card" aria-hidden="true">
+            <div class="review-top">
+              <strong>沈女士 · 博美主人</strong>
+              <span>精修造型</span>
+            </div>
+            <div class="review-stars" aria-label="五星好评">★★★★★</div>
+            <p>会先确认想要的圆头比例，还会根据毛量建议保留长度。成品很精神，拍照特别上镜，狗狗全程状态也比较放松。</p>
+            <div class="review-meta">2026.04.06 · 造型沟通</div>
+          </article>
+          <article class="review-card" aria-hidden="true">
+            <div class="review-top">
+              <strong>马女士 · 法斗主人</strong>
+              <span>皮肤敏感护理</span>
+            </div>
+            <div class="review-stars" aria-label="五星好评">★★★★★</div>
+            <p>我家狗皮肤容易红，店里没有乱推荐项目，先检查皮肤状态再选低刺激洗护。洗完没有挠得厉害，这点很安心。</p>
+            <div class="review-meta">2026.03.31 · 敏感友好</div>
+          </article>
+          <article class="review-card" aria-hidden="true">
+            <div class="review-top">
+              <strong>刘先生 · 边牧主人</strong>
+              <span>日常护理</span>
+            </div>
+            <div class="review-stars" aria-label="五星好评">★★★★★</div>
+            <p>预约、到店、接宠都很顺。护理报告里写了牙龈、耳朵和指甲情况，比单纯洗个澡更有价值，适合长期固定来。</p>
+            <div class="review-meta">2026.03.24 · 护理档案</div>
+          </article>
+          </div>
         </div>
       </div>
     </section>
