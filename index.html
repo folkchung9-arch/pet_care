@@ -1458,6 +1458,9 @@
                 <option>19:30</option>
               </select>
             </label>
+            <label>到店人数
+              <input name="visitors" type="number" inputmode="numeric" min="1" max="6" value="1" required />
+            </label>
             <label class="full">备注
               <textarea name="note" placeholder="例如：怕吹风、毛结较多、第一次洗护、需要接送等"></textarea>
             </label>
@@ -1599,6 +1602,7 @@
     const form = document.querySelector("#bookingForm");
     const formMessage = document.querySelector("#formMessage");
     const dateInput = form.querySelector('input[type="date"]');
+    const visitorsInput = form.querySelector('input[name="visitors"]');
 
     const today = new Date();
     today.setMinutes(today.getMinutes() - today.getTimezoneOffset());
@@ -1617,6 +1621,7 @@
       formMessage.textContent = `${name}，预约信息已记录。门店会为您保留 ${time} 的护理时段并尽快确认。`;
       form.reset();
       dateInput.value = today.toISOString().slice(0, 10);
+      visitorsInput.value = "1";
       packageSelect.value = "168";
       estimatePrice.textContent = "¥168 起";
     });

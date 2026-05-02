@@ -224,6 +224,9 @@ export const pageHtml = `<header class="topbar">
                 <option>19:30</option>
               </select>
             </label>
+            <label>到店人数
+              <input name="visitors" type="number" inputmode="numeric" min="1" max="6" value="1" required />
+            </label>
             <label class="full">备注
               <textarea name="note" placeholder="例如：怕吹风、毛结较多、第一次洗护、需要接送等"></textarea>
             </label>

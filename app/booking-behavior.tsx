@@ -9,8 +9,9 @@ export function BookingBehavior() {
     const form = document.querySelector<HTMLFormElement>("#bookingForm");
     const formMessage = document.querySelector<HTMLElement>("#formMessage");
     const dateInput = form?.querySelector<HTMLInputElement>('input[type="date"]');
+    const visitorsInput = form?.querySelector<HTMLInputElement>('input[name="visitors"]');
 
-    if (!packageSelect || !estimatePrice || !form || !formMessage || !dateInput) return;
+    if (!packageSelect || !estimatePrice || !form || !formMessage || !dateInput || !visitorsInput) return;
 
     const today = new Date();
     today.setMinutes(today.getMinutes() - today.getTimezoneOffset());
@@ -31,6 +32,7 @@ export function BookingBehavior() {
       formMessage.textContent = name + "\uff0c\u9884\u7ea6\u4fe1\u606f\u5df2\u6536\u5230\uff0c\u6211\u4eec\u4f1a\u5c3d\u5feb\u548c\u4f60\u786e\u8ba4 " + time + " \u7684\u5230\u5e97\u65f6\u95f4\u3002";
       form.reset();
       dateInput.value = todayValue;
+      visitorsInput.value = "1";
       packageSelect.value = "168";
       updateEstimate();
     };
